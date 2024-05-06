@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Webpage Title</title>
+    <style>
+        
+        .svg-windows, .svg-tablets, .svg-phones {
+            display: none;
+        }
+        
+    
+        @media only screen and (min-width: 1200px) {
+            .svg-windows {
+                display: inline-block;
+            }
+        }
+
+        
+        @media only screen and (max-width: 1199px) and (min-width: 768px) {
+            .svg-tablets {
+                display: inline-block;
+            }
+        }
+
+        
+        @media only screen and (max-width: 767px) {
+            .svg-phones {
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <img class="svg-windows" src="wid_port.svg" alt="Windows SVG">
+
+    
+    <img class="svg-tablets" src="tab_port.svg" alt="Tablets SVG">
+
+    
+    <img class="svg-phones" src="phon_port.svg" alt="Phones SVG">
+</body>
+</html>
