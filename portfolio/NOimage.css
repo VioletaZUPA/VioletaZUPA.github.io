@@ -1,0 +1,31 @@
+body {
+    background-color: #000000; 
+}
+
+h1 {
+
+    text-align: center;
+    color: white;
+    font-size: 55px;
+    margin-top: 24%;
+}
+
+.cat {
+    width: 400px; 
+    margin-top: 22%;
+   margin-left: 40%;
+}
+
+.puk {
+    width: 500px; 
+    margin-top: 15%;
+   margin-left: 37%;
+
+}
+
+.ex {
+    width: 700px; 
+    margin-top: 15%;
+   margin-left: 32%;
+   margin-bottom: 700px;
+}

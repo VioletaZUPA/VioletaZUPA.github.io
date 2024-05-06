@@ -1,0 +1,62 @@
+body {
+    background-color: #000000; 
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 100px; 
+    margin-top: 20%;
+}
+
+p {
+
+text-align: center;
+color: white;
+font-size: 40px;
+margin-top: 10px;
+
+}
+
+
+.one {
+    font-size: 40px;
+    list-style-type: none;
+    margin-left: 35%;
+}
+
+.one :hover{
+    color: red;
+}
+
+.one :active {
+color: greenyellow;
+}
+
+.one :visited {
+color: rgb(255, 255, 255);
+}
+
+.two {
+    font-size: 40px;
+    color: red;
+    text-decoration: none;
+    margin-bottom: 200px;
+    list-style-type: none;
+    margin-top: -2.30%;
+    margin-left: 60%;
+}
+
+.two :hover{
+color: rgb(255, 0, 0);
+}
+
+.one :active {
+color: greenyellow;
+
+}
+
+.one :visited {
+color: rgb(255, 255, 255);
+
+}
