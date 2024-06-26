@@ -1,31 +1,165 @@
 body {
     background-color: #000000; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 h1 {
-
     text-align: center;
     color: white;
-    font-size: 55px;
+    font-size: 3.5rem; /* 55px equivalent */
     margin-top: 24%;
 }
 
-.cat {
-    width: 400px; 
-    margin-top: 22%;
-   margin-left: 40%;
+.cat, .ex {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 5% auto; /* Center and space out the images */
 }
 
 .puk {
-    width: 500px; 
-    margin-top: 15%;
-   margin-left: 37%;
-
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 5% auto; /* Center and space out the images */
 }
 
-.ex {
-    width: 700px; 
-    margin-top: 15%;
-   margin-left: 32%;
-   margin-bottom: 700px;
+.gif0, .gif1, .gif3, .l1, .l2, .l3 {
+    width: 30%; /* Make these elements a bit smaller */
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 5% auto; /* Center and space out the images */
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around; /* Distribute space evenly around items */
+    align-items: center;
+    margin: 5% auto;
+}
+
+.flex-item {
+    width: 30%;
+    max-width: 80%;
+    height: auto;
+    margin: 1%;
+}
+
+.p-container {
+    display: flex;
+    justify-content: center; /* Center the items */
+    align-items: center;
+    margin: 5% auto;
+}
+
+.p-container img {
+    width: 40%; /* Adjust width as needed */
+    max-width: 40%; /* Ensure items take full width */
+    height: auto;
+    margin: 0 2%; /* Add horizontal spacing between images */
+}
+
+.P1 {
+    width: 30%; /* Adjust width for P1 as needed */
+}
+
+.P2 {
+    width: 20%; /* Adjust width for P2 to make it smaller */
+}
+
+.Play {
+    display: block;
+    margin: 30% auto 5%; /* Center the image and add margin-top for spacing */
+    width: 10%; /* Adjust initial width as needed */
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 3rem;
+        margin-top: 20%;
+    }
+
+    .cat, .puk, .ex {
+        margin-top: 10%;
+    }
+
+    .gif0, .gif1, .gif3, .l1, .l2, .l3 {
+        width: 70%; /* Adjust width for better fit on smaller screens */
+    }
+
+    .flex-item {
+        width: 45%;
+    }
+
+    .Play {
+        width: 20%; /* Adjust width for better fit on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+        margin-top: 15%;
+    }
+
+    .cat, .puk, .ex {
+        width: 80%; /* Adjust width for better fit on smaller screens */
+        margin-top: 8%;
+    }
+
+    .gif0, .gif1, .gif3, .l1, .l2, .l3 {
+        width: 60%; /* Further adjust width for smaller screens */
+    }
+
+    .flex-container, .p-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items */
+    }
+
+    .flex-item, .p-container img {
+        width: 80%; /* Adjust width for better fit on smaller screens */
+        margin: 2% 0; /* Adjust vertical spacing */
+    }
+
+    .P1, .P2 {
+        width: 60%; /* Increase width for P1 and P2 on smaller screens */
+    }
+
+    .Play {
+        width: 20%; /* Increase width for Play on smaller screens */
+        margin-top: 20%; /* Adjust margin-top for spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+        margin-top: 10%;
+    }
+
+    .cat, .puk, .ex {
+        width: 90%;
+        margin-top: 5%;
+    }
+
+    .gif0, .gif1, .gif3, .l1, .l2, .l3 {
+        width: 50%; /* Further adjust width for smallest screens */
+    }
+
+    .flex-item, .p-container img {
+        width: 90%; /* Adjust width for smallest screens */
+    }
+
+    .P1, .P2 {
+        width: 80%; /* Increase width for P1 and P2 on smallest screens */
+    }
+
+    .Play {
+        width: 20%; /* Increase width for Play on smallest screens */
+        margin-top: 50%; /* Adjust margin-top for spacing */
+    }
 }

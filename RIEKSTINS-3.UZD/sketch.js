@@ -25,24 +25,24 @@ class Square {
     this.color = color(random(255), random(255), random(255), 100);
     this.prevX = this.x;
     this.prevY = this.y;
-    this.rotationSpeed = random(0.01, 0.05); // Adjust rotation speed here
-    this.wiggleRange = 2; // Adjust wiggle range here
+    this.rotationSpeed = random(0.01, 0.05); 
+    this.wiggleRange = 2; 
   }
 
   update() {
-    // Slow rotation
+   
     this.angle += this.rotationSpeed;
     if (this.angle >= TWO_PI) {
       this.angle = 0;
     }
 
-    // Update position with wiggle
+    
     this.prevX = this.x;
     this.prevY = this.y;
     this.x += cos(this.angle) * this.speed + random(-this.wiggleRange, this.wiggleRange);
     this.y += sin(this.angle) * this.speed + random(-this.wiggleRange, this.wiggleRange);
 
-    // Wrap around edges
+    
     if (this.x > width + this.size) {
       this.x = -this.size;
     } else if (this.x < -this.size) {
@@ -62,7 +62,7 @@ class Square {
     rotate(this.angle);
     strokeWeight(2);
     stroke(this.color);
-    noFill(); // Remove the fill
+    noFill(); 
     rectMode(CENTER);
     rect(0, 0, this.size, this.size);
     pop();

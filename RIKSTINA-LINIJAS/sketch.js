@@ -70,28 +70,28 @@ function drawVerticalLineToBottom() {
     line(x, y, x, y + step); // Vertical line to bottom
     y += step; // Move down
   } else {
-    y = 0; // Start from top if hit bottom
+    y = 0; 
   }
 }
 
 function drawMirroredDiagonalLine() {
-  if (x - step >= 0 && y + step <= height) { // Check if line goes beyond canvas
-    line(x, y, x - step, y + step); // Mirrored diagonal line
-    x -= step; // Move left
-    y += step; // Move down
+  if (x - step >= 0 && y + step <= height) { 
+    line(x, y, x - step, y + step); 
+    x -= step; 
+    y += step; 
   } else {
     if (x > 0 && y < height) {
-      x = width; // Start from right if hit left
-      y = 0; // Start from top if hit bottom
+      x = width; 
+      y = 0; 
     }
   }
 }
 
 function drawHorizontalLineToLeft() {
-  if (x - step >= 0) { // Check if line goes beyond canvas left
-    line(x, y, x - step, y); // Horizontal line to left
-    x -= step; // Move left
+  if (x - step >= 0) { 
+    line(x, y, x - step, y); 
+    x -= step;
   } else {
-    x = width; // Start from right if hit left
+    x = width; 
   }
 }

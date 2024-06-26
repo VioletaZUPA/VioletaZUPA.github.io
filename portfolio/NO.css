@@ -3,40 +3,77 @@ body {
     background-color: #000000; 
     background-repeat: repeat;
     background-size: 30%;
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
-
-
-
 
 h1 {
     text-align: center;
     color: rgb(255, 255, 255);
-    font-size: 75px; 
+    font-size: 4.5rem; /* 75px equivalent */
     margin-top: 50px;
 }
 
 .black-rectangle {
-    
     width: 100%;
-    height: 100%; 
+    height: auto; 
     background-color: black; 
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-p{
+p {
     color: white;
     text-align: center;
-    margin-left: 50px;
-    margin-right: 50px;
-    font-size: 45px;
+    margin: 0 50px;
+    font-size: 2.8rem; /* 45px equivalent */
 }
 
-.black-rectangle {
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 4rem;
+    }
 
-width: 50%;
-height: 100px;
-background-color: #000000;
+    p {
+        font-size: 2.4rem;
+        margin: 0 40px;
+    }
 
+    .black-rectangle {
+        padding: 15px;
+    }
 }
 
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3.5rem;
+    }
 
+    p {
+        font-size: 2rem;
+        margin: 0 30px;
+    }
+
+    .black-rectangle {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        margin: 0 20px;
+    }
+
+    .black-rectangle {
+        width: 100%;
+        padding: 5px;
+    }
+}
